@@ -6,7 +6,7 @@ const WeatherBox = ({ weather, icon }) => {
     console.log('웨더 정보 확인', weather);
     /* 오늘 날짜 데이터 함수 */
     const todayData = () => {
-        const week = ['SUN','MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+        const week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
         let now = new Date();
         let todayMonth = now.getMonth() + 1 > 9 ? now.getMonth() + 1 : '0' + (now.getMonth() + 1);
         let todayDate = now.getDate() > 9 ? now.getDate() : '0' + now.getDate();
