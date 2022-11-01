@@ -90,17 +90,6 @@ useEffect((city)=>{
     getWeatherByCity();
 },[city]);
 
-/*   useEffect((city) => {
-    //useEffect는 componentDidUpdate 역할도 한다
-    if (city === '') {
-        setLoading(true);
-        getCurrentLocation();
-    } else {
-        setLoading(true);
-        getWeatherByCity();
-    }
-  }, [city]); */
-
     /* 도시 선택하기 */
     const handleCityChange = (city) => {
       if (city === 'current') {
